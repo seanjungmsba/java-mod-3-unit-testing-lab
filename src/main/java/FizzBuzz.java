@@ -1,3 +1,4 @@
+// Sean Jung
 public class FizzBuzz {
   public String fizzBuzzString(String str) {
 
