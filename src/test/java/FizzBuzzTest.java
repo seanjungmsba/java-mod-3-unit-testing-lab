@@ -4,9 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTest {
-
     FizzBuzz fizzBuzzTester;
-
     @BeforeEach
     void setUp() {
         fizzBuzzTester = new FizzBuzz();
@@ -25,6 +23,11 @@ class FizzBuzzTest {
     @Test
     void startsWithFAndEndsWithBShouldReturnFizzBuzz() {
         assertEquals("FizzBuzz",fizzBuzzTester.fizzBuzzString("fob"));
+    }
+
+    @Test
+    void neitherStartWithFNorEndsWithBShouldReturnAsIs() {
+        assertEquals("other",fizzBuzzTester.fizzBuzzString("other"));
     }
 
     @Test
